@@ -16,56 +16,46 @@
 <h1>Used Car Dealership</h1>
 </header>
 
+<main>
 <section class="filters">
 
 <h2>Filter Cars</h2>
 
-<label>Min Year</label>
+<form id="filterForm">
+<label for="minYear">Min Year</label>
 <input type="number" id="minYear">
 
-<label>Max Year</label>
+<label for="maxYear">Max Year</label>
 <input type="number" id="maxYear">
 
-<label>Max Mileage</label>
+<label for="maxMileage">Max Mileage</label>
 <input type="number" id="maxMileage">
 
-<label>Min Price</label>
+<label for="minPrice">Min Price</label>
 <input type="number" id="minPrice">
 
-<label>Max Price</label>
+<label for="maxPrice">Max Price</label>
 <input type="number" id="maxPrice">
 
-<label>Make</label>
-<select id="make">
-<option value="">All</option>
-<option>Toyota</option>
-<option>Honda</option>
-<option>Ford</option>
-<option>Nissan</option>
-<option>Chevrolet</option>
-<option>BMW</option>
-<option>Lexus</option>
-<option>Tesla</option>
+<label for="make">Make</label>
+<select id="make" multiple size="8">
 </select>
+<p class="filter-help">Hold Command on Mac or Ctrl on Windows to select more than one make.</p>
 
-<label>Color</label>
-<select id="color">
-<option value="">All</option>
-<option>Black</option>
-<option>White</option>
-<option>Blue</option>
-<option>Silver</option>
-<option>Red</option>
-<option>Gray</option>
+<label for="color">Color</label>
+<select id="color" multiple size="7">
 </select>
+<p class="filter-help">Hold Command on Mac or Ctrl on Windows to select more than one color.</p>
 
-<button onclick="filterCars()">Apply Filters</button>
+<button type="submit">Apply Filters</button>
+</form>
 
 </section>
 
 <section id="carContainer" class="car-container"></section>
 
 <p id="noResults"></p>
+</main>
 
 </body>
 </html>

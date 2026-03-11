@@ -156,7 +156,9 @@ const usedCars = [
   },
 ];
 
-window.usedCars = usedCars;
+if (typeof window !== "undefined") {
+  window.usedCars = usedCars;
+}
 
 if (typeof module !== "undefined" && module.exports) {
   module.exports = usedCars;
