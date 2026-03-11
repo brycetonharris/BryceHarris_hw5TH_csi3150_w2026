@@ -1,0 +1,41 @@
+body{
+font-family: Arial;
+margin: 20px;
+background:#f5f5f5;
+}
+
+header{
+text-align:center;
+margin-bottom:30px;
+}
+
+.filters{
+background:white;
+padding:20px;
+margin-bottom:30px;
+border-radius:8px;
+}
+
+.filters input,
+.filters select{
+display:block;
+margin-bottom:10px;
+padding:5px;
+}
+
+.car-container{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+gap:20px;
+}
+
+.car-card{
+background:white;
+padding:15px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.car-card h3{
+margin:0;
+}

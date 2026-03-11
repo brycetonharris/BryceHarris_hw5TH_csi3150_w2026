@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Used Car Dealership</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/usedCars-TH-1.js"></script>
+<script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+<h1>Used Car Dealership</h1>
+</header>
+
+<section class="filters">
+
+<h2>Filter Cars</h2>
+
+<label>Min Year</label>
+<input type="number" id="minYear">
+
+<label>Max Year</label>
+<input type="number" id="maxYear">
+
+<label>Max Mileage</label>
+<input type="number" id="maxMileage">
+
+<label>Min Price</label>
+<input type="number" id="minPrice">
+
+<label>Max Price</label>
+<input type="number" id="maxPrice">
+
+<label>Make</label>
+<select id="make">
+<option value="">All</option>
+<option>Toyota</option>
+<option>Honda</option>
+<option>Ford</option>
+<option>Nissan</option>
+<option>Chevrolet</option>
+<option>BMW</option>
+<option>Lexus</option>
+<option>Tesla</option>
+</select>
+
+<label>Color</label>
+<select id="color">
+<option value="">All</option>
+<option>Black</option>
+<option>White</option>
+<option>Blue</option>
+<option>Silver</option>
+<option>Red</option>
+<option>Gray</option>
+</select>
+
+<button onclick="filterCars()">Apply Filters</button>
+
+</section>
+
+<section id="carContainer" class="car-container"></section>
+
+<p id="noResults"></p>
+
+</body>
+</html>
